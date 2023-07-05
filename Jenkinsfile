@@ -13,9 +13,9 @@ node{
     }
     
     stage('Code Checkout'){
-        try{
+     //   try{
             checkout scm
-        }
+       // }
      //   catch(Exception e){
        //     echo 'Exception occured in Git Code Checkout Stage'
          //   currentBuild.result = "FAILURE"
