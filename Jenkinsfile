@@ -16,10 +16,6 @@ node{
         git url:'https://github.com/vdharmaraj/PGDO_Proj3.git',branch:'master' //update your forked repo     
     }
     
-    stage('Maven Build'){
-        sh "${mavenCMD} clean package"        
-    }
-
    stage('Build Project') {
       // build project via maven
       sh "'${mvnHome}/bin/mvn' clean install"
