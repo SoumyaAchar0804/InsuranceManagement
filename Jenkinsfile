@@ -20,5 +20,5 @@ node{
       // build project via maven
       sh "'${mvnHome}/bin/mvn' clean install"
     }
-    
+}
    
