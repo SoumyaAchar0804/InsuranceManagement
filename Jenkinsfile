@@ -1,7 +1,7 @@
 node{
     
     def mavenHome, mavenCMD, docker, tag, dockerHubUser, containerName, httpPort = ""
-
+   tools { jdk 'java-11' }
    stage('Prepare Environment'){
         echo 'Initialize Environment'
         mavenHome = tool name: 'Maven 3.9.3' , type: 'maven'
