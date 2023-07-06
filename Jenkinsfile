@@ -13,7 +13,7 @@ node{
     }
     
     stage('Code Checkout'){
-        git url:'https://github.com/vdharmaraj/PGDO_Proj3.git',branch:'master' //update your forked repo     
+        git url:'https://github.com/SoumyaAchar0804/InsuranceManagement.git',branch:'master' //update your forked repo     
     }
     
    stage('Build Project') {
