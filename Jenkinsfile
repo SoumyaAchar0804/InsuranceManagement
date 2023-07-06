@@ -2,10 +2,7 @@ node{
     
     def mavenHome, mavenCMD, docker, tag, dockerHubUser, containerName, httpPort = ""
 
-    script {
-	    System.setProperty("org.jenkinsci.plugins.durabletask.BourneShellScript.HEARTBEAT_CHECK_INTERVAL", "300"); 
-    }
-    
+   
     stage('Prepare Environment'){
         echo 'Initialize Environment'
         mavenHome = tool name: 'Maven 3.9.3' , type: 'maven'
@@ -14,6 +11,10 @@ node{
 	dockerHubUser="soumyaachar"
 	containerName="insure-me"
 	httpPort="8081"
+	script {
+	    System.setProperty("org.jenkinsci.plugins.durabletask.BourneShellScript.HEARTBEAT_CHECK_INTERVAL", "300"); 
+        }
+        
     }
     
     stage('Code Checkout'){
